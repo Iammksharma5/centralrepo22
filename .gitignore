@@ -1,2 +1,4 @@
 *.vsidx
 *..sqlite
+/.vs/slnx.sqlite
+/.vs/centralrepo22/v17/.wsuo
