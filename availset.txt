@@ -1,0 +1,44 @@
+availability set belongs to single datacenter.
+
+An availability set is a logical grouping of VMs within a datacenter that allows Azure to understand how your application is built to provide for redundancy and availability.
+
+
+99.95% SLA to provide HA
+
+Single VM machine with premium storage 99.95 %
+
+No cost for availability set itself,you only pay for each VM instance that you create.
+
+Two additional groupings
+
+
+> Fault Domains:
+
+* Logical Group of underlying hardware that share a common power
+  source and network switch , similar to a rack within an on-premises datacenter.
+
+* VMs get automatically distributed as you create them within a Fault Domain in an availability set, up to D3 FD
+
+
+
+> Update Domains
+
+* Logical group of underlying hardware that can undergo maintenance or he  rebooted at the same time.
+
+* The order of reboot may not proceed sequenatially during planned maintenance,but only one update domain is rebooted at a time.
+
+* Vms are automatically distributed across Update Domains in an Availability Set, up to 20 & by default 05 Update Domains 
+
+
+
+
+
+
+Fault Domain :
+
+By default you get only 2 FD however you can extend upto  3 .
+
+
+Update Domain :
+
+By default you get only 5 UD however you can extend upto 20
